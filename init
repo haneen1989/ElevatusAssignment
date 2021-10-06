@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+require_once 'Hamming.php';
+require_once 'Levenshtein.php';
+
+$str1 = readline("Enter first string: ");
+$str2 = readline("Enter second string:");
+
+echo nl2br("The Hamming distance betwee ".$str1." and ".$str2." is :".Hamming::hamming_dis($str1, $str2).PHP_EOL);
+echo nl2br("The Levenshtein distance betwee ".$str1." and ".$str2." is :".Levenshtein::levenshtein_dis($str1, $str2));
