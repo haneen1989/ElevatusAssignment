@@ -15,8 +15,7 @@ class Levenshtein
         $str1Array = str_split($str1);
         $str2Array = str_split($str2);
         $row = [];
-        $row[0] = 0;
-        for ($j = 1; $j < count($str2Array) + 1; $j++) {
+        for ($j = 0; $j < count($str2Array); $j++) {
             $row[$j] = $j;
         }
         $matrix[0] = $row;
